@@ -1,0 +1,31 @@
+{
+  "name": "notion-cms-test",
+  "version": "1.0.0",
+  "description": "Test project for notion-cms library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-types": "notion-cms generate",
+    "generate-types-direct": "notion-cms generate f8175b3baf6d47d1bc6fe3e50ec379a5 -t secret_YOUR_NOTION_TOKEN_HERE -o src/types",
+    "example": "ts-node src/examples/basic-usage.ts"
+  },
+  "dependencies": {
+    "@local/notion-cms": "workspace:*",
+    "@notionhq/client": "^2.3.0",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "dotenv": "^16.3.1",
+    "notion-cms": "file:../notion-cms"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.1"
+  }
+}
